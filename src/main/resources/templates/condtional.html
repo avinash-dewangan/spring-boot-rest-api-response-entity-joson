@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Elvise Operator in Thymeleaf</title>
+</head>
+<body>
+ 	<h1>Elvise Operator</h1>
+
+	<h2>User is <span th:text="${isActive}?'ACTIVE' : 'NOT ACTIVE' "></span></h2>
+
+	 
+	<h1>if and unless Operator</h1>
+	
+	 <h2 th:if="${gender}=='M'">Male</h2>
+	 <h2 th:unless="${gender}=='M'">Female</h2>
+	 
+	 <h1>switch</h1>
+	 
+	 <div th:switch="${list.size()}">
+	    <h2 th:case="'0'">List content zero element</h2>
+	    <h2 th:case="'1'">List content one element</h2>
+	    <h2 th:case="*">List content more then one element</h2>
+	    
+	 </div>
+
+
+</html>

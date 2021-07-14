@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>thymeleaf</title>
+</head>
+<body>
+	<h1>fragment</h1>
+	
+	<footer id="replace" th:replace="footer::footer1(${title},${subtitle})">
+	</footer>
+	
+<!-- 	<footer id="insert" th:insert="footer::footer1">
+	</footer>
+	
+	<footer id="include" th:include="footer::footer1">
+	</footer> -->
+	
+	
+</body>
+</html>
